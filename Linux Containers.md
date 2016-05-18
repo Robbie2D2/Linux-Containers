@@ -22,7 +22,7 @@ Para este caso utilicé la distribución de Ubuntu con el siguiente comando en l
 
 Este comando crea el contenedor y se baja la distribución Trusty Ubuntu Minimal con todas sus dependencias. Se crea su propio sistema de archivos como se muestra acontinuación:  
 
-![temp](img/fs.jpg "File System")
+![fs](img/fs.jpg "File System")
 
 #Ejecutar contenedor
 
@@ -32,14 +32,14 @@ Para ejecutar el contenedor se corre el siguiente comando en la terminal:
 Para ver un listado de los contenedores en ejecución se corre el siguiente comando:  
 `sudo lxc-ls --fancy`
 
-![temp](img/lxc-ls.jpg "Lista contenedores")
+![lxc](img/lxc-ls.jpg "Lista contenedores")
 
-Dentro del contenedor podemos observar como se crea su propio proceso init y los demás bprocesos del sistema como se muestra en la siguiente imagen:
+Dentro del contenedor podemos observar como se crea su propio proceso init y los demás bprocesos del sistema como se muestra en la siguiente imagen:  
 
-![temp](img/ps aux ubu-veth-001.jpg "Procesos Contenedor")
+![ps](img/ps_aux_ubu-veth-001.jpg "Procesos Contenedor")
 
-Dentro del servidor podemos reconocer que se encuentran dos procesos init. Uno con PID 1 y otro con PID 14463 perteneciente al contenedor.
+Dentro del servidor podemos reconocer que se encuentran dos procesos init. Uno con PID 1 y otro con PID 14463 perteneciente al contenedor.  
 
-![temp](img/init host.jpg "Procesos Host")
+![ps](img/init_host.jpg "Procesos Host")
 
-Las llamadas al sistema que hace el contenedor se hacen hacia las herramientas de lxc en espacio de usuario directamente al kernel de Linux del sistema servidor.
+Las llamadas al sistema que hace el contenedor se hacen hacia las herramientas de lxc en espacio de usuario directamente al kernel de Linux del sistema servidor.  
